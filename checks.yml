@@ -1,0 +1,9 @@
+checks for fct_sales:
+  - row_count > 0:
+      name: "Таблица не пустая"
+  - missing_count(invoice_no) = 0:
+      name: "Нет пустых invoice_no"
+  - min(total_revenue) >= 0:
+      name: "Нет отрицательной выручки"
+  - duplicate_count(invoice_no, stock_code) = 0:
+      name: "Нет дублей товара в чеке"

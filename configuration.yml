@@ -1,0 +1,8 @@
+data_source analytics_rfm:
+  type: postgres
+  host: 10.0.2.2
+  port: 5432
+  username: dwh_user
+  password: dwh_password
+  database: analytics_rfm
+  schema: public
