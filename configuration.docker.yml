@@ -1,0 +1,10 @@
+# configuration.docker.yml — версия для запуска из контейнера Airflow (Docker в VM).
+# Отличается от локальной configuration.yml только хостом: 10.0.2.2 вместо localhost.
+data_source analytics_rfm:
+  type: postgres
+  host: 10.0.2.2
+  port: 5432
+  username: ${DB_USER}
+  password: ${DB_PASSWORD}
+  database: analytics_rfm
+  schema: public
