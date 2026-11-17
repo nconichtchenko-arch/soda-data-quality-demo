@@ -38,7 +38,8 @@ Pet-проект по настройке проверок качества да�
 ### Как подключить к существующему Airflow (standalone в Docker)
 
 1. **Смонтировать папку проекта в контейнер Airflow.** В `docker-compose.yml` standalone Airflow добавь volume к сервисам `airflow-scheduler` и `airflow-webserver`:
-   ```yaml
+   yaml
    
    volumes:
      - /path/to/soda-data-quality-demo:/opt/airflow/soda-project
+  
