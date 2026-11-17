@@ -39,5 +39,6 @@ Pet-проект по настройке проверок качества да�
 
 1. **Смонтировать папку проекта в контейнер Airflow.** В `docker-compose.yml` standalone Airflow добавь volume к сервисам `airflow-scheduler` и `airflow-webserver`:
    ```yaml
+   
    volumes:
      - /path/to/soda-data-quality-demo:/opt/airflow/soda-project
